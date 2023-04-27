@@ -16,11 +16,11 @@ let feriaCoin = confirm("Bienvenido al portal de pagos feriaCoin");
 let opcionUno = "perros";
 let opcionDos = "gato";
 
-if ((consultaMascota == opcionUno) && (cantDeMascotas <= CANT_MAX_PERROS) && ( cantDeMascotas > CANT_POR_DEF)) {
-    if ((cantDeTiempo >= PASEO_TIEMPO_MIN) && (cantDeTiempo <= PASEO_TIEMPO_MAX))
+if ((consultaMascota == opcionUno) && (cantDeMascotas <= CANT_MAX_PERROS) && ( cantDeMascotas > CANT_POR_DEF) &&
+     (cantDeTiempo >= PASEO_TIEMPO_MIN) && (cantDeTiempo <= PASEO_TIEMPO_MAX)) {
     document.write("Su pago mediante feriacoin fue exitoso : monto total " + ((cantDeTiempo * COSTO_POR_MINUTO) + (cantDeMascotas * PRECIO_PERRO))+ " dolares");
-} else if ((consultaMascota == opcionDos) && (cantDeMascotas == CANT_MAX_GATOS) && (cantDeMascotas > CANT_POR_DEF)) {
-    if ((cantDeTiempo >= PASEO_TIEMPO_MIN) && (cantDeTiempo <= PASEO_TIEMPO_MAX))
+} else if ((consultaMascota == opcionDos) && (cantDeMascotas == CANT_MAX_GATOS) && (cantDeMascotas > CANT_POR_DEF) &&
+     (cantDeTiempo >= PASEO_TIEMPO_MIN) && (cantDeTiempo <= PASEO_TIEMPO_MAX)) {
     document.write("Su pago mediante feriacon fue exitoso : monto total " + ((cantDeTiempo * COSTO_POR_MINUTO) + (cantDeMascotas * PRECIO_GATO)) + " dolares");
 }
 
